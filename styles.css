@@ -8,7 +8,7 @@
 
 body {
 	font-family: 'Poppins', sans-serif;
-	/* line-height: 1.5; */
+	line-height: 1.5;
 
 	padding: 0 100px;
 
@@ -24,6 +24,7 @@ body {
 .container {
 	margin: 0 auto;
 	max-width: 1310px;
+	overflow: hidden;
 }
 
 .fh {
@@ -54,9 +55,71 @@ body {
 
 /* Start Head Content styles */
 
+.head-content {
+	display: flex;
+}
+
+.head-content__block:first-child {
+	margin-right: 45px;
+}
+
 .head-content__photo {
 	border-radius: 87px;
 	max-width: 100%;
+}
+
+.head-content__header {
+	color: var(--primary-text-color);
+	font-weight: 600;
+	font-style: italic;
+	letter-spacing: 0.25em;
+	font-size: 2.125rem;
+	padding-top: 50px;
+}
+
+.contancts__header {
+	margin: 22px 0;
+}
+
+.header-line {
+	color: var(--color-first);
+	font-size: 1.25rem;
+	font-weight: 600;
+	letter-spacing: 0.25em;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.header-line::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 190px; 
+	width: 565px; 
+	height: 2px;
+	background-color: var(--primary-text-color); 
+	opacity: 0.2;
+}
+
+.contacts__item {
+	display: flex;
+	color: var(--primary-text-color);
+	font-size: 1.25rem;
+	align-items: center;
+	text-decoration: none;
+}
+
+.contacts__item:not(:last-child) {
+	margin-bottom: 12px;
+}
+
+.contacts__item img {
+	margin-right: 12px;
+}
+
+.contacts__item a {
+	text-decoration: none;
+	color: var(--primary-text-color);
 }
 
 /* End Head Content styles */
