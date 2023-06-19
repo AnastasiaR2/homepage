@@ -230,23 +230,23 @@ body {
 	display: flex;
 }
 
-.skills__list {
+.list {
 	list-style-type: none;
 	font-size: 1.25rem;
 	color: var(--primary-text-color);
 }
 
-.skills__list li:nth-child(1n+1) {
+.list li:nth-child(1n+1) {
 	background: url(./assets/icons/markers/green.svg) left no-repeat;
 	padding: 0px 0px 0px 35px;
 }
 
-.skills__list li:nth-child(2n+1) {
+.list li:nth-child(2n+1) {
 	background: url(./assets/icons/markers/blue.svg) left no-repeat;
 	padding: 0px 0px 0px 35px;
 }
 
-.skills__list li:nth-child(3n+1) {
+.list li:nth-child(3n+1) {
 	background: url(./assets/icons/markers/pink.svg) left no-repeat;
 	padding: 0px 0px 0px 35px;
 }
@@ -370,6 +370,40 @@ body {
 	border: 2px solid var(--color-third);
 }
 
+.additional-info {
+	max-width: 649px;
+}
+
+.experience {
+	margin-bottom: 22px;
+}
+
+.experience__timeline {
+	padding: 0px 12px;
+}
+
+.experience__header {
+	margin-bottom: 45px;
+}
+
+.item__description {
+	font-weight: 300;
+}
+
+.languages__header {
+	margin-bottom: 22px;
+}
+
+.languages__list li {
+	font-weight: 300;
+	color: var(--secondary-text-color);
+}
+
+.languages__list li span{
+	font-weight: 400;
+	color: var(--primary-text-color);
+}
+
 @media screen and (max-width: 576px) {
 	.skills {
 		flex-direction: column;
@@ -383,6 +417,7 @@ body {
 
 	.main-info {
 		padding-left: 12px;
+		flex-direction: column;
 	}
 
 	.item {
