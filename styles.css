@@ -39,14 +39,14 @@ body {
 	box-shadow: 10px 7px 20px rgba(0, 0, 0, 0.05), 7px 1px 15px rgba(0, 0, 0, 0.2);
 }
 
-.resume-block {
+.resume-block:not(:last-child) {
 	margin-bottom: 45px;
 }
 
 @media screen and (max-width: 576px) {
 
 	.resume {
-		padding: 0px 12px 12px 0px;
+		padding: 0px 12px 40px 0px;
 		border-radius: 54px;
 		box-shadow: 10px 7px 20px rgba(0, 0, 0, 0.05);
 	}
@@ -219,6 +219,8 @@ body {
 		font-size: 1rem;
 		text-align: center;
 	}
+
+
 
 }
 
@@ -428,6 +430,72 @@ body {
 		flex: 0 0 36px;
 		margin-bottom: 12px;
 	}
+
+	.education__header {
+		margin-bottom: 24px;
+	}
+
+	.experience__header {
+		margin-bottom: 24px;
+	}
 }
 
 /* End Primary styles */
+
+/* Start Secondary styles*/
+
+.hobbies__wrapper {
+	margin: 0px -22px;
+	display: flex;
+}
+.hobbies__header {
+	margin-bottom: 45px;
+}
+
+.hobbies__item {
+	padding: 0px 22px;
+	flex: 1 1 33.333%;
+	display: flex;
+	align-items: flex-start;
+}
+
+.hobbies__item img {
+	margin-right: 12px;
+}
+
+.hobbies__item__title {
+	color: var(--primary-text-color);
+}
+.hobbies__item__info p{
+	color: var(--secondary-text-color);
+}
+
+.timeline-block__header {
+	margin-bottom: 44px;
+}
+
+.timeline-block_wrapper {
+	display: flex;
+}
+
+.timeline-block__timeline {
+	padding: 0px 12px;
+}
+
+@media screen and (max-width: 576px) {
+	.hobbies {
+		padding-left: 12px; 
+	}
+	.hobbies__wrapper {
+		flex-direction: column;
+	}
+	.hobbies__header {
+		margin-bottom: 24px;
+	}
+	.timeline-block_wrapper {
+		flex-direction: column;
+	}
+
+}
+
+/* End Secondary styles */
